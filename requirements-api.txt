@@ -1,0 +1,12 @@
+# Slim runtime deps for the deployed API (Render single-service).
+# Pinned ML libs match the versions the model .pkl files were trained with,
+# so joblib unpickling stays compatible.
+fastapi==0.138.0
+uvicorn[standard]
+joblib
+numpy
+pandas
+scikit-learn==1.8.0
+xgboost==3.3.0
+lightgbm==4.6.0
+shap

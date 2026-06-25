@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.egg-info/
+.venv/
+venv/
+.claude/
+
+# Cached dataset and generated artifacts
+data/
+data/raw/
+data/processed/
+results/
+
+# Generated reports — ignore everything except the published SHAP figure,
+# which the README embeds and therefore must be committed.
+reports/*
+!reports/shap_summary.png
+
+# MLflow tracking
+mlruns/
+mlartifacts/
+models/
